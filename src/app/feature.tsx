@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography } from "@material-tailwind/react";
+import { Typography } from "@mui/material";
 
 import {
   CursorArrowRaysIcon,
@@ -49,10 +49,7 @@ export function Features() {
         <Typography variant="h1" color="blue-gray" className="mb-4">
           Diverse Learning Resources
         </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
-        >
+        <Typography className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 " >
           Access your learning materials on the go. Whether you&apos;re
           commuting, waiting for a friend, or just have a few minutes to spare,
           our app fits seamlessly into your busy life.

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button, Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@mui/material";
 
 
 function Hero() {
@@ -14,7 +14,6 @@ function Hero() {
               Your Perfect <br /> Learning App
             </Typography>
             <Typography
-              variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
               Our app is here to empower you on your quest for knowledge,
@@ -24,11 +23,7 @@ function Hero() {
               Get the app
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
-              >
+              <Button className="flex justify-center items-center gap-3" >
                 <Image
                   width={256}
                   height={256}
@@ -38,11 +33,7 @@ function Hero() {
                 />
                 App Store
               </Button>
-              <Button
-                size="lg"
-                color="white"
-                className="flex justify-center items-center gap-3"
-              >
+              <Button className="flex justify-center items-center gap-3" >
                 <Image
                   width={256}
                   height={256}
@@ -68,10 +59,7 @@ function Hero() {
           <Typography variant="h3" color="blue-gray" className="mb-3">
             Learning App
           </Typography>
-          <Typography
-            variant="paragraph"
-            className="font-normal !text-gray-500 lg:w-5/12"
-          >
+          <Typography className="font-normal !text-gray-500 lg:w-5/12" >
             Download our app to dive into a vast library of courses, tutorials,
             and study materials on a wide range of subjects - from programming
             and language learning to personal development and beyond

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+import { Typography } from "@mui/material";
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
 
@@ -41,10 +41,7 @@ export function Testimonials() {
           <Typography variant="h2" color="blue-gray" className="mb-2">
             What Clients Say
           </Typography>
-          <Typography
-            variant="lead"
-            className="mb-10 max-w-3xl text-center !text-gray-600"
-          >
+          <Typography className="mb-10 max-w-3xl text-center !text-gray-600" >
             Discover what our valued clients have to say about their experiences
             with our services. We take pride in delivering exceptional results
             and fostering lasting partnerships.

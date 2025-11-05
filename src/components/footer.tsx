@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Typography, IconButton, Button } from "@material-tailwind/react";
+import { Typography, IconButton, Button } from "@mui/material";
 
 const LINKS = ["About Us", "Careers", "Press", "Blog", "Pricing"];
 const CURRENT_YEAR = new Date().getFullYear();
@@ -12,10 +12,6 @@ export function Footer() {
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
             <Typography
-              as="a"
-              href="https://www.material-tailwind.com"
-              target="_blank"
-              variant="h5"
               color="white"
               className="mb-4"
             >
@@ -28,8 +24,6 @@ export function Footer() {
               {LINKS.map((link, idx) => (
                 <li key={link}>
                   <Typography
-                    as="a"
-                    href="#"
                     color="white"
                     className={`py-1 font-medium transition-colors ${
                       idx === 0 ? "pr-3" : "px-3"
@@ -46,10 +40,7 @@ export function Footer() {
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
-              <Button
-                color="white"
-                className="flex items-center justify-center"
-              >
+              <Button className="flex items-center justify-center" >
                 <Image
                   width={256}
                   height={256}
@@ -59,10 +50,7 @@ export function Footer() {
                 />
                 App Store
               </Button>
-              <Button
-                color="white"
-                className="flex items-center justify-center"
-              >
+              <Button className="flex items-center justify-center" >
                 <Image
                   width={256}
                   height={256}
@@ -92,19 +80,19 @@ export function Footer() {
           </Typography>
 
           <div className="flex gap-2">
-            <IconButton variant="text" color="white">
+            <IconButton>
               <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton>
               <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton>
               <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton>
               <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton>
               <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
             </IconButton>
           </div>
